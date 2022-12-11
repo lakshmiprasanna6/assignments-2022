@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+x-value: <input type="text" id="xvalue" value="" placeholder="enter x value">
+
+<button onclick="myFunction()">post increment</button>
+<p id="demo"></p>
+<p id="demo1"></p>
+y-value: <input type="text" id="yvalue" value="" placeholder="enter y value">
+<button onclick="myFunction1()">pre increment</button>
+<p id="demo1"></p>
+<script>
+function myFunction() {
+  var x = parseInt(document.getElementById('xvalue').value);
+  document.getElementById("demo").innerHTML = x;
+  x++;
+  document.getElementById("demo1").innerHTML = x;
+}
+</script>
+<script>
+function myFunction1() {
+  var y = parseInt(document.getElementById("yvalue").value);
+document.getElementById("demo").innerHTML = y;
+  ++y;
+  document.getElementById("demo1").innerHTML = y;
+}
+</script>
+</body>
+</html>

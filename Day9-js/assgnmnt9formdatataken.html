@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Name: <input type="text" id="myText" value="" placeholder="enter name">
+
+<button onclick="myFunction()">display name</button>
+
+age: <input type="text" id="myage" value="12" placeholder="enter age">
+<button onclick="myFunction1()">display age</button>
+<p id="demo"></p> <p id="demo1"></p>
+<script>
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+<script>
+function myFunction1() {
+  var y = document.getElementById("myage").value;
+  document.getElementById("demo1").innerHTML = y;
+}
+</script>
+</body>
+</html>

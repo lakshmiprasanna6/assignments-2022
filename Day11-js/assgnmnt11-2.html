@@ -1,0 +1,97 @@
+<html>
+<head>
+</head>
+</br>
+<body onload="window.alert('Page successfully loaded');">
+<script>
+document.write("The page is loaded successfully");
+</script>
+<center>
+<form>
+<input type="button" onclick="clickevent()" value="click me"/>
+<p onmouseover="mouseoverevent()"> Keep cursor over me</p>
+1st Number : <input type="text" id="firstNumber" /><br>
+2nd Number: <input type="text" id="secondNumber" /><br>
+3rd Number: <input type="text" id="thirdNumber" /><br>
+<input type="button" onClick="multiplyBy()" Value="Multiply num1,2,3" />
+<input type="button" onClick="divideBy()" Value="Divide num1,2" />
+<p>4th Number: <input type="text" id="fourthNumber" /><br>
+<input type="button" onClick="fixdecimal()" Value="fixdecimal-2" /><br>
+<h1>
+  <button id="genNew">Generate New Random Color</button>
+  <span id="color"></span>
+</h1>
+<p>5th -ve Number: <input type="text" id="fifthNumber" /><br>
+<input type="button" onClick="negative()" Value="for positive number" placeholder="enter negative number" /><br></p>
+</form>
+<p id="demo1">fix decimal places</p>
+<p>The Result is : <br>
+<span id = "result"></span>
+<span id = "result1"></span>
+<span id = "result2"></span>
+</p></p>
+<div id="myDiv" style="border:1px solid">
+        <span>This is a span in Div.</span>
+    </div>
+    <br>
+    <button type="button" onclick="changeStyle()">Click Me for color change</button>
+<button type="button" onclick="randomnumber()">Click Me for random number</button>
+<p id="demo">random change number</p>
+</center>
+    <script>
+function fixdecimal(){
+var num4=document.getElementById("fourthNumber").value;
+document.getElementById("result1").innerHTML = (Math.round(num4*100)/100).toFixed(2);}
+    function changeStyle(){
+        var element = document.getElementById("myDiv");
+        element.style.backgroundColor = "#ffFF00";
+
+    }
+function randomnumber(){
+document.getElementById("demo").innerHTML =Math.floor(Math.random() * 100);
+}
+    </script>
+<script>
+function negative(){
+var num5=document.getElementById("fifthNumber").value;
+document.getElementById("result2").innerHTML =Math.abs(num5);
+}
+</script>
+<script>
+function multiplyBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+	num3 = document.getElementById("thirdNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2*num3;
+}
+
+function divideBy() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 / num2;
+}
+
+</script>
+<script>
+const setBg = () => {
+  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.backgroundColor = "#" + randomColor;
+  }
+setBg();
+</script>
+<script>
+function clickevent()
+	{
+		document.write("This is click event");
+	}
+function mouseoverevent()
+	{
+		alert("This is mouse event");
+	}
+</script>
+</body>
+</html>
+
+ 

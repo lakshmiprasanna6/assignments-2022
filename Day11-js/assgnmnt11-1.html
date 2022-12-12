@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>array</title>
+</head>
+<body>
+<p id="demo">duplicate values</p>
+<p id="demo1">reverse</p>
+<p id="demo2">sort</p>
+<p id="demo3">emp details</p>
+<p id="demo4">display3 elements</p>
+<p id="demo5">remove</p>
+<p id="demo3"></p>
+<p id="demo3"></p>
+<script>
+const strArray = ["s","h","e", "l","o","v","e","s", "c","o","d","e"];
+let findDuplicates = arr => arr.filter((item, index) => arr.indexOf(item) != index)
+document.getElementById("demo").innerHTML=findDuplicates(strArray);
+const str=["she","loves","code"];
+document.getElementById("demo1").innerHTML = str.reverse();
+document.getElementById("demo2").innerHTML = str.sort();
+const emp = {
+  firstName: "lakshmi",
+  lastName: "g",
+  age: 29,
+};
+document.getElementById("demo3").innerHTML =
+emp.firstName + "  " + emp.age + " ";
+document.getElementById("demo4").innerHTML = str.substring(0,2);
+document.getElementById("demo5").innerHTML = strArray.pop();
+alert("poped");
+
+</script>
+</body>
+</html>

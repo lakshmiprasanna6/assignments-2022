@@ -1,0 +1,40 @@
+if(true){
+var x='var value'
+}
+console.log(x)
+var value debugger eval code:4:9
+undefined
+if(true){
+let y='let value'//cont access out side the block
+}
+console.log(y)
+Uncaught ReferenceError: y is not defined
+    <anonymous> debugger eval code:4
+debugger eval code:4:1
+const z={mame: 'learn'}
+
+z.name='do'//cant change directly. but with the properties or object can be modified
+console.log(z)
+Object { mame: "learn", name: "do" }
+debugger eval code:4:9
+undefined
+const z={name: 'learn'}
+
+z.name='do'//cant change directly. but with the properties or object can be modified
+console.log(z)
+Uncaught SyntaxError: redeclaration of const z
+    <anonymous> debugger eval code:1
+debugger eval code:1:1
+const z={name: 'learn'}
+console.log(z)
+Uncaught SyntaxError: redeclaration of const z
+    <anonymous> debugger eval code:1
+debugger eval code:1:1
+const xy={name: 'learn'}
+console.log(xy)
+Object { name: "learn" }
+debugger eval code:2:9
+undefined
+const xyz={name: 'learn'}
+xyz.name='do'
+"do"

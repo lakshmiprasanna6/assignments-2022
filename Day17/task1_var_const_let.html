@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+var: <input type="text" id="xvalue" value="" placeholder="enter var value">
+
+<button onclick="myFunction()">var result</button>
+<p id="demo"></p>
+let: <input type="text" id="yvalue" value="" placeholder="enter let value">
+<button onclick="myFunction1()">let result</button>
+<p id="demo1"></p>
+const: <input type="text" id="zvalue" value="" placeholder="enter const value">
+<button onclick="myFunction2()">const result</button>
+<p id="demo2"></p>
+<script>
+function myFunction() {
+  var x = parseInt(document.getElementById('xvalue').value);
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+<script>
+function myFunction1() {
+  let y = parseInt(document.getElementById("yvalue").value);
+document.getElementById("demo1").innerHTML = y;
+}
+</script>
+<script>
+function myFunction2() {
+  const z = parseInt(document.getElementById("zvalue").value);
+document.getElementById("demo2").innerHTML = z;
+}
+</script>
+</body>
+</html>

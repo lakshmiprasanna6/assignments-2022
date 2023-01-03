@@ -1,0 +1,24 @@
+var varVariable='true'
+undefined
+console.log(varVariable)
+true debugger eval code:1:9
+undefined
+var varVariable='false'
+undefined
+console.log(varVariable)
+false debugger eval code:1:9
+undefined
+let varVariable='false'
+Uncaught SyntaxError: redeclaration of var varVariable
+    <anonymous> debugger eval code:1
+debugger eval code:1:1
+console.log(varVariable)
+false debugger eval code:1:9
+undefined
+const varVariable='false'
+Uncaught SyntaxError: redeclaration of var varVariable
+    <anonymous> debugger eval code:1
+debugger eval code:1:1
+console.log(varVariable)
+false debugger eval code:1:9
+undefined
